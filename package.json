@@ -1,0 +1,25 @@
+{
+  "name": "aug_24_cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:smoke":"cucumber-js test --tags @smoke",
+    "test:report": "tsx src/tests/utils/reports.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^13.3.0",
+    "multiple-cucumber-html-reporter": "^3.9.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
