@@ -17,5 +17,9 @@ export class ProductPage extends BasePage
          await this.page.getByText(this.menu1).click()
          await this.page.getByText(this.logoutlink).click()
     }
+    public async cartpage()
+    {
+        console.log("Hello")
+    }
     
 }
