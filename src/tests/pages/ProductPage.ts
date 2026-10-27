@@ -20,6 +20,7 @@ export class ProductPage extends BasePage
     public async cartpage()
     {
         console.log("Hello")
+        console.log("new line added")
     }
     
 }
