@@ -1,10 +1,10 @@
-import { Before, After } from "@cucumber/cucumber";
+import { Before, After,setDefaultTimeout } from "@cucumber/cucumber";
 import { MyWorld } from "./MyWorld";
 import { chromium } from "@playwright/test";
 import { LoginPage } from "../pages/LoginPage";
 import { ProductPage } from "../pages/ProductPage";
 
-
+setDefaultTimeout(40000)
 Before(async function (this: MyWorld) {
    this.browser = await chromium.launch({ headless: false })
    this.context = await this.browser.newContext({
